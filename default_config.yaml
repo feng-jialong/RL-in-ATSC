@@ -1,0 +1,23 @@
+# signal configs
+yellow: 3.0
+red: 2.0
+timeloss: 3.0
+phase_scheme: [[0,1],[2,3],[4,5],[6,7]]  # 默认为单口放行, 包括绿灯间隔相位
+
+# simulation configs
+is_stochastic: True  # 是否采用随机到达
+sim_length: 1800
+sfr: 1800
+
+controller: "webster"
+generator: "constant"
+
+# fixed time controller
+g_time: 20.0
+
+# webster controller
+webster_mode: 'exact'
+
+# mpc controller
+
+# rl controller
